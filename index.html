@@ -72,8 +72,10 @@
     if (username === '' || password === '') {
       errorMessage.textContent = 'Username and password are required.';
     } else {
-      // Perform further validation or submit form to server
-      errorMessage.textContent = ''; // Clear previous error messages
+      // Additional security checks or API calls can be added here
+
+  // Redirect to a welcome page on successful login
+  window.location.href = 'welcome.html';
     }
   }
 </script>
