@@ -1,0 +1,37 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.programming-section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  color: #007bff;
+}
+
+.code-editor {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  border: 1px solid #ced4da;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+.output {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+}
