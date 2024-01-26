@@ -2,7 +2,8 @@ body {
     text-align: center;
     background: #ffd5bf;
     font-weight: bloder;
-    
+    background-repeat:no-repeat;
+background-image: url(login.jpg);
     width: 100%;
     height: auto;
 }
