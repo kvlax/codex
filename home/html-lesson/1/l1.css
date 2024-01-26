@@ -1,0 +1,16 @@
+body {
+  padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+/* Add more styling as needed */
