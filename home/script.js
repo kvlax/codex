@@ -1,9 +1,9 @@
+// scripts.js
 function runCode() {
-    const htmlCode = document.getElementById('htmlCode').value;
-    const previewFrame = document.getElementById('preview');
-    const previewDocument = previewFrame.contentDocument || previewFrame.contentWindow.document;
-
-    previewDocument.open();
-    previewDocument.write(htmlCode);
-    previewDocument.close();
+    const code = document.getElementById('code-editor').value;
+    const outputFrame = document.getElementById('output-frame');
+    const frameDocument = outputFrame.contentDocument || outputFrame.contentWindow.document;
+    frameDocument.open();
+    frameDocument.write(code);
+    frameDocument.close();
 }
