@@ -1,11 +1,9 @@
-function runCode(editorId) {
-  const code = document.getElementById(editorId).value;
-  const outputId = `${editorId.split('-')[0]}-output`;
+function runCode() {
+    const htmlCode = document.getElementById('htmlCode').value;
+    const previewFrame = document.getElementById('preview');
+    const previewDocument = previewFrame.contentDocument || previewFrame.contentWindow.document;
 
-  try {
-    const result = eval(code);
-    document.getElementById(outputId).innerText = result;
-  } catch (error) {
-    document.getElementById(outputId).innerText = `Error: ${error.message}`;
-  }
+    previewDocument.open();
+    previewDocument.write(htmlCode);
+    previewDocument.close();
 }
