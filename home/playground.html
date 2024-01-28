@@ -1,69 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <title>Learn Programming</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>playground</title>
 </head>
+
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">Learn Programming</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#html-section">HTML</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#css-section">CSS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#js-section">JavaScript</a>
-        </li>
-      </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="editor">
+                    <h2>HTML</h2>
+                    <textarea id="htmlCode"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="editor">
+                    <h2>Preview</h2>
+                    <iframe id="preview"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary" onclick="runCode()">Run Code</button>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
 
-<div class="container mt-5">
-  <section id="html-section" class="programming-section">
-    <h2 class="section-title">HTML</h2>
-    <p>HTML is the standard markup language for creating web pages.</p>
-    <div class="code-editor">
-      <textarea id="html-code" rows="8" placeholder="Write your HTML code here..."></textarea>
-      <button class="btn btn-primary" onclick="runCode('html-code')">Run HTML</button>
-    </div>
-    <div id="html-output" class="output"></div>
-  </section>
-
-  <section id="css-section" class="programming-section">
-    <h2 class="section-title">CSS</h2>
-    <p>CSS is a style sheet language used for describing the look and formatting of a document written in HTML.</p>
-    <div class="code-editor">
-      <textarea id="css-code" rows="8" placeholder="Write your CSS code here..."></textarea>
-      <button class="btn btn-primary" onclick="runCode('css-code')">Run CSS</button>
-    </div>
-    <div id="css-output" class="output"></div>
-  </section>
-
-  <section id="js-section" class="programming-section">
-    <h2 class="section-title">JavaScript</h2>
-    <p>JavaScript is a high-level, interpreted programming language.</p>
-    <div class="code-editor">
-      <textarea id="js-code" rows="8" placeholder="Write your JavaScript code here..."></textarea>
-      <button class="btn btn-primary" onclick="runCode('js-code')">Run JavaScript</button>
-    </div>
-    <div id="js-output" class="output"></div>
-  </section>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
